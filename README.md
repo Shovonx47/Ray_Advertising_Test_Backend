@@ -22,7 +22,7 @@ Create a `.env` file in the backend directory with the following variables:
 
 ```env
 # Server Configuration
-PORT=3000
+PORT=5000
 NODE_ENV=development
 
 # Database Configuration
@@ -57,33 +57,13 @@ npm start
 
 ## API Endpoints
 
-- `GET /health` - Health check endpoint
 - `GET /api/v1/users` - Get all users
 - `POST /api/v1/users` - Create a new user
 - `GET /api/v1/users/:id` - Get user by ID
 - `PUT /api/v1/users/:id` - Update user
 - `DELETE /api/v1/users/:id` - Delete user
 
-## Project Structure
 
-```
-src/
-├── config/
-│   └── database.ts      # Database configuration
-├── controllers/
-│   └── userController.ts # User controller
-├── entities/
-│   └── User.ts          # User entity
-├── middleware/
-│   └── errorHandler.ts   # Error handling middleware
-├── routes/
-│   └── userRoutes.ts     # User routes
-├── services/
-│   └── userService.ts    # User service
-├── validation/
-│   └── userValidation.ts # Validation schemas
-└── index.ts              # Main application file
-```
 
 ## Features
 
@@ -94,5 +74,4 @@ src/
 - Input validation with Zod
 - Rate limiting
 - CORS enabled
-- Helmet for security headers
 - Error handling middleware 
